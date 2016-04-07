@@ -1,6 +1,6 @@
 [user]
 	name = tangjuncarl
-	email = tangjuncarl@sina.com
+	email = w0lker.tg@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
@@ -11,3 +11,7 @@
 	unstage = reset HEAD
 	last = log -l
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
