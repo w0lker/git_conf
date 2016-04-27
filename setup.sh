@@ -6,5 +6,5 @@ fi
 if [[ -f ~/.gitignore_global ]] || [[ -L ~/.gitignore_global ]]; then
     rm -rf ~/.gitignore_global
 fi
-ln -sf `pwd`/gitconfig ~/.gitconfig
-ln -sf `pwd`/gitignore_global ~/.gitignore_global
+cp -f `pwd`/gitconfig ~/.gitconfig
+cp -f `pwd`/gitignore_global ~/.gitignore_global
